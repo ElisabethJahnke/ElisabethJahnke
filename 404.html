@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap');
+
+        *, *::before, *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        }
+        body {
+            background-color: #3C3C3B;
+            height: 100vh;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr;
+        }
+        .stars {
+            height: 42vh;
+            padding: 10px;
+        }
+
+        #stars-right {
+            transform: rotate(180deg);
+        }
+        .deathstar {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            height: 35vh;
+            margin-top: 20vh;
+        }
+        p {
+            text-transform: uppercase;
+            text-align: center;
+            color: #FFF;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            margin-top: 20px;
+            font-size: 1em;
+        }
+        .navigation {
+            position: absolute;
+            bottom: 25vh;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        a {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            color: #FFF;
+            background-color: #CBAD84;
+            text-transform: uppercase;
+            text-align: center;
+            border: 2px solid #CBAD84;
+            text-decoration: none;
+            display: inline-block;
+            padding: 8px 15px;
+            border-radius: 4px;
+            font-size: 0.75em;
+        }
+        #back {
+            margin-right: 4em;
+        }
+    </style>
+</head>
+<body>
+    <div class="svg" id="stars-left">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135 249" id="stars" class="stars"><style>.a{fill:#CBAD84;}</style>
+            <path d="M105 117c0-25-22-25-22-25s22 0 22-25c0 25 22 25 22 25S105 92 105 117z" class="a"/>
+            <polygon points="111 181 108 178 108 182 106 178 105 183 105 178 103 182 103 178 100 181 102 177 98 179 101 176 97 177 101 175 96 174 101 173 97 171 101 172 98 169 102 171 100 167 103 170 103 165 105 169 105 165 106 169 108 165 108 170 111 167 109 171 113 169 109 172 114 171 110 173 114 174 110 175 114 177 109 176 113 179 109 177 " class="a"/>
+            <path d="M89 241c0-18-18-18-18-18s18 0 18-18c0 18 18 18 18 18S89 223 89 241z" class="a"/>
+            <polygon points="32 36 25 32 20 38 19 30 11 31 17 25 11 19 19 20 21 12 25 18 32 15 30 22 37 25 30 28 " class="a"/>
+            <circle cx="55" cy="137" r="6" class="a"/>
+            <path d="M27 169c-4 0-8 4-8 8s4 8 8 8c4 0 8-4 8-8S31 169 27 169zM27 181c-2 0-4-2-4-4 0-2 2-4 4-4 2 0 4 2 4 4C31 179 29 181 27 181z" class="a"/>
+            <polygon points="57 72 52 67 53 74 50 68 49 74 48 68 46 74 47 67 42 72 45 66 39 69 44 65 38 66 43 63 37 62 43 61 38 58 44 59 39 55 45 58 42 52 47 56 46 50 48 56 49 50 50 56 53 50 52 56 57 52 54 58 59 55 55 59 61 58 55 61 62 62 55 63 61 66 55 65 59 69 54 66 " class="a"/>
+            <path d="M27 129c0-13-13-13-13-13s13 0 13-13c0 13 13 13 13 13S27 117 27 129z" class="a"/>
+        </svg>
+    </div>
+
+    <div id="center">
+        <div class="svg" id="deathstar">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 457 203" class="deathstar">
+                <circle cx="237" cy="108" r="91" style="fill:#CBAD84;"/>
+                <path d="M59 55l-25 56h14V91h26v19h12v21H74v20H48V132H6v-19l27-58H59z" class="a" style="fill:#FFF;opacity:1.0"/>
+                <path d="M426 55l-25 56h14V91h26v19h12v21h-12v20h-26V132h-42v-19l27-58H426z" class="a" style="fill:#FFF;opacity:1.0"/>
+                <path d="M252 56c6 5 13 8 19 8 4 0 7-1 9-3 3-3 3-7 2-12 -2-5-5-10-10-14 -6-5-13-8-19-8 -4 0-7 1-9 3C238 36 242 48 252 56zM244 30c2-2 5-3 8-3 6 0 13 3 18 8 5 4 8 9 9 14 1 5 1 9-1 12 -2 2-5 3-8 3 -6 0-13-3-18-8C243 47 239 36 244 30zM204 30c0 0 1-10 4-18 0 0-8 1-16 3l-5 16L204 30zM194 15c5-1 10-2 13-2 -2 6-3 13-3 15l-13 1L194 15zM285 116l6 1c0 0 4-7 4-25l-7-2C287 89 288 105 285 116zM293 92c0 13-2 20-3 23l-3-1c2-8 2-19 2-23L293 92zM249 59c7 6 15 9 22 9 5 0 9-2 12-5 3-4 4-9 3-16 -2-6-6-12-11-17 -7-6-15-9-22-9 -5 0-9 2-12 5C233 34 237 49 249 59zM252 25c6 0 14 3 20 9 5 5 9 10 10 16 1 5 1 10-2 13 -2 2-5 4-9 4 -6 0-14-3-20-9 -10-9-14-22-8-29C245 26 248 25 252 25zM235 29c0 0-2-10-6-18 0 0-4-1-10-1 -3 0-6 0-9 1l-3 17L235 29zM212 13c2 0 5-1 8-1 4 0 7 1 9 1 2 5 4 12 5 15l-24 0L212 13zM184 31c3-7 5-16 5-16 -3 1-12 5-12 5l-6 12L184 31zM178 22c2-1 6-3 9-4 -1 3-2 8-4 12l-10 2L178 22zM293 118l7 2c0 0 3-9 4-25l-7-3C296 92 298 105 293 118zM302 96c-1 12-2 20-3 22l-4-1c3-9 3-19 3-23L302 96zM273 114l9 1c0 0 3-13 3-26l-9-1C276 88 277 100 273 114zM283 90c0 10-2 20-2 23l-6-1c2-10 3-20 2-24L283 90zM247 21l-4-6c-4-2-10-2-10-2 1 1 5 14 5 14C240 24 247 21 247 21zM242 16l3 4c-2 1-4 2-6 4 -1-3-2-7-3-10C237 14 240 15 242 16zM174 22c-10 5-16 13-16 13 6-2 9-2 9-2L174 22zM163 33c2-2 4-4 7-6l-3 6C166 32 165 32 163 33zM291 133l4 1c4-7 5-13 5-13l-4-1L291 133zM298 122c-1 2-2 6-4 10l-1 0 4-11L298 122zM161 48l12-2 4-12 -10 2C162 42 161 48 161 48zM174 35l-3 9 -9 2c1-2 2-5 4-9L174 35zM238 83l-16 0v29h15C238 97 238 83 238 83zM235 110h-12V84l13 0C236 88 236 99 235 110zM220 112h-1v-29h1V112zM223 31h-10v12h10V31zM222 42h-7v-10h7V42zM211 31l-18 1 -2 12 19-1L211 31zM209 42L193 42l2-9 15-1L209 42zM190 72h23l0-27 -21 1C192 46 190 63 190 72zM212 46l0 24h-20c0-7 2-19 2-23L212 46zM191 32l-13 1L175 45l14-1L191 32zM177 43l2-8 10-1 -2 8L177 43zM163 37l-9 3c-5 7-9 13-9 13 8-3 13-4 13-4C160 42 163 37 163 37zM148 50c1-2 4-6 6-9l5-2c-1 2-2 5-3 8C155 48 152 49 148 50zM301 83c-1-5-2-14-2-14 3 2 4 15 4 15L301 83zM278 69v7c4 0 7 1 7 1 0-4-1-13-1-13C281 67 278 69 278 69zM280 75v-5c1 0 2-1 3-2 0 2 1 5 1 8C282 75 281 75 280 75zM251 54c3 3 6 4 9 4 2 0 3-1 5-2 2-2 2-4 1-7 -1-2-2-5-4-7 -3-3-6-4-9-4 -2 0-3 1-5 2 -2 2-2 4-1 7C248 50 249 52 251 54zM250 43c1-1 2-1 3-1 2 0 5 1 7 3 2 2 3 4 3 6 0 1 0 3-1 4 -1 1-2 1-3 1 -2 0-5-1-7-3 -2-2-3-4-3-6C249 46 249 44 250 43zM248 112l13 1 10 1c3-14 3-26 3-26l-12-2 -12-1 -10-1c0 9-1 29-1 29L248 112zM242 85l9 1 11 1 10 2c0 3 0 13-3 23l-9-1 -13-1 -8 0C241 106 242 93 242 85zM217 72h13V45h-13V72zM219 46h9v24h-9V46zM300 82c0 0-2-16-5-25l-6-2c0 0 3 9 5 25C294 80 298 82 300 82zM294 58c2 7 4 17 4 21 -1 0-2-1-3-1 -1-10-3-18-4-21L294 58zM230 129h2l0-2h6l1-14h-8L230 129zM232 114h5l0 11h-4 -1L232 114zM234 31l-8 0v12h10C236 38 234 31 234 31zM228 32l6 0c0 2 1 5 1 9h-7V32zM236 45h-2l0 27 21 2v-8C242 57 236 45 236 45zM254 72l-18-2 -1-24h0c1 3 7 13 19 20V72zM275 70h1v6h-1v-3h-2 -3v3h-1v-3h-3v3h-1v-3h-3v3h-1v-6h1v2h3v-2h1v2h3v-2h1v2h3 2V70zM204 112V83l-16 1c0 0 1 23 2 28H204zM203 85v25H190c-1-5-1-20-1-25L203 85zM185 129c-1-6-2-14-2-14h-13c1 6 3 14 3 14L185 129zM182 116c0 3 1 7 2 11l-10 0c-1-2-2-7-2-12H182zM177 148c-4-9-6-17-6-17l-10 0c3 10 7 17 7 17L177 148zM170 132c1 2 2 8 5 14l-6 0c-1-2-4-7-6-14L170 132zM152 114c-3-9-4-24-4-24l-7 1c1 16 4 24 4 24L152 114zM147 92c0 4 1 14 3 21l-4 1c-1-2-3-9-3-21L147 92zM165 113c-3-14-3-27-3-27l-8 1c1 16 3 27 3 27L165 113zM161 88c0 4 0 14 2 24l-5 1c-1-3-2-12-3-24L161 88zM189 148c0 0-3-7-4-17l-12 0c0 0 2 10 6 17H189zM184 132c1 6 3 11 3 14h-7c-3-5-4-11-5-14L184 132zM170 130l-3-15 -7 0 4 14L170 130zM165 116l3 12 -4 0 -3-12L165 116zM213 148h11c1-8 1-17 1-17l-13 0L213 148zM223 132c0 3 0 8-1 14h-8l-1-15L223 132zM145 132l6-1 -5-14 -4 1 1 3h-1L145 132zM146 118l4 11 -3 0 -2-8h1l0-2 0-1L146 118zM148 117l5 14 7-1 -4-14L148 117zM155 129l-4-11 5-1 3 11L155 129zM139 91l-4 1c0 14 3 25 3 25l5-2C141 112 139 91 139 91zM136 94l2 0c0 5 2 17 3 22l-2 1C138 113 136 104 136 94zM203 165l-2-12H181l5 12H203zM200 154l2 10h-15l-4-10H200zM204 131l-14 0c2 12 4 17 4 17h12C204 141 204 131 204 131zM192 132l11 0c0 3 1 8 2 14h-9C194 145 193 140 192 132zM217 83h-9v29h9V83zM216 110h-7v-26h7V110zM193 129h15l-1-15 -16 0L193 129zM206 115l0 12h-12l-1-12L206 115zM213 129v-2l4 0v-13h-6l1 15H213zM216 115v11l-3 0 -1 0 0-11H216zM191 129l-1-14h-5c1 8 3 14 3 14H191zM188 116l1 11h-1c0-1-1-6-2-11H188zM207 131l2 17h2l-1-17H207zM208 132h0l0 5L208 132zM220 165v-12h-14l2 12H220zM219 154v10h-9l-2-10H219zM167 113c0 0-2-9-3-25h2c0 0 1 18 3 25H167zM184 112c0 0-2-17-1-28l-15 1c0 0 0 17 2 28L184 112zM181 86c0 9 1 21 1 25l-11 1c-2-9-2-21-2-25L181 86zM136 81c5-3 15-5 15-5 0-5 2-15 2-15l-3 1 1-4 3-1 1-6c-5 1-12 5-12 5C138 68 136 81 136 81zM153 53l-1 3 -2 0 -1 0 0 1 -1 4 0 2 2 0 1 0c-1 3-1 8-2 12 -2 0-7 1-11 3 1-4 3-13 6-22C145 56 149 54 153 53zM254 153l-5 13h10l7-13H254zM258 164h-7l4-10h9L258 164zM225 165h16l3-12h-19V165zM227 154h15l-2 10h-13V154zM229 148h-2c0 0 1-11 1-17h2C230 131 230 142 229 148zM243 114c0 3-1 15-1 15l17 0 1-8h-2l1-7L243 114zM258 123l-1 5 -14 0c0-3 1-9 1-12l13 0 -1 6 0 2h2H258zM226 113h-7v15h7V113zM225 126h-4v-11h4V126zM218 182c21 0 37-11 37-11l-75 0C180 171 198 182 218 182zM218 180c-14 0-26-5-33-8l64 0C244 175 232 180 218 180zM268 149l15 1c4-4 11-15 11-15l-17-3C274 142 268 149 268 149zM292 137c-2 3-6 9-9 12l-12-1c2-3 5-8 7-14L292 137zM189 46l-20 2c-3 14-3 25-3 25l21-2C187 65 189 46 189 46zM167 72c0-3 1-12 3-22l17-2c0 5-2 17-2 23L167 72zM159 50c-3 11-4 18-4 18l3-1 -1 8 5-1c0-9 4-26 4-26L159 50zM162 73l-2 0 1-6 0-2 -2 0 -1 0c0-3 1-8 3-15l4-1C164 55 162 66 162 73zM263 166c5-1 19-13 19-13h-11L263 166zM278 154c-4 3-8 7-11 9l5-9H278zM288 118l-10-1 -4 14 9 2C287 125 288 118 288 118zM276 129l3-11 7 1c0 2-2 7-4 11L276 129zM144 134c3 8 9 16 9 16l3-1c-4-5-9-16-9-16L144 134zM153 148c-1-2-5-8-8-13l0 0c1 2 4 9 7 13L153 148zM251 153h-4l-4 12h3L251 153zM248 154h1l-2 6L248 154zM233 148h11c3-6 5-17 5-17h-15C235 141 233 148 233 148zM248 132c-1 3-2 10-4 15h-9c0-3 1-8 1-15H248zM261 131h-7c-1 8-4 17-4 17h6C258 142 261 131 261 131zM251 147c1-3 3-9 4-15h4c-1 3-3 10-5 15H251zM175 153H157c3 5 12 12 12 12h12L175 153zM160 154h14l5 10h-9C168 163 163 158 160 154zM165 149c0 0-7-12-8-16l-8 1c0 0 2 8 8 16L165 149zM156 134c1 4 4 10 6 13l-4 0c-4-5-6-11-7-13L156 134zM264 115l-4 14 10 0c4-7 4-14 4-14L264 115zM270 128l-8 0 3-11 9 1C273 119 272 124 270 128zM293 119l-3-1 -3 10 3 1L293 119zM289 128l2-7 0 0 -2 7L289 128zM272 132l-7 0c-1 5-6 17-6 17l4 0C267 144 272 132 272 132zM261 147c1-3 4-9 5-14l4 0c-1 3-4 10-7 14L261 147zM218 7c-49 0-90 40-90 90 0 49 40 90 90 90s90-40 90-90C308 47 268 7 218 7zM218 9c46 0 83 35 87 80 -48-16-93-16-122-12 -26 3-45 9-51 11 0 0 0 0 0 0l0 0c0 0 0 0 0 0C136 44 173 9 218 9zM218 183c-48 0-87-39-87-87 0-2 0-4 0-5 0 0 0 0 0 0l0 0c0 0 0 0 0 0 9-3 86-28 173 2 0 1 0 3 0 4C305 144 266 183 218 183z" class="a" style="fill:#FFF;opacity:1.0"/>
+            </svg>
+        </div>
+        <p>It looks like the planet you are searching for does not exist (anymore)!<br>Quick, go back before everything explodes!</p>
+    
+        <div class="navigation">
+            <a id="back">back</a>
+            <a id="home" href="index.html#landing">home</a>
+        </div>
+        <script>
+            // https://stackoverflow.com/a/46163215
+            let back_link = document.getElementById("back");
+            // Provide a standard href to facilitate standard browser features such as 
+            //  - Hover to see link
+            //  - Right click and copy link
+            //  - Right click and open in new tab
+            back_link.setAttribute("href", document.referrer);
+            // We can't let the browser use the above href for navigation. If it does, 
+            // the browser will think that it is a regular link, and place the current 
+            // page on the browser history, so that if the user clicks "back" again,
+            // it'll actually return to this page. We need to perform a native back to
+            // integrate properly into the browser's history behavior
+            back_link.onclick = function() {
+                history.back();
+                return false;
+            }
+        </script>
+    </div>
+
+    <div class="svg" id="stars-right">
+        <svg viewBox="0 0 135 249" class="stars">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" href="#stars"></use>
+        </svg>
+    </div> 
+</body>
+</html>
