@@ -1,9 +1,38 @@
 /*
     FONTS
 */
+/*
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Roboto+Condensed:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
+*/
+/* barlow-condensed-regular - latin */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/barlow-condensed-v4-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Barlow Condensed Regular'), local('BarlowCondensed-Regular'),
+       url('../fonts/barlow-condensed-v4-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/barlow-condensed-v4-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/barlow-condensed-v4-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/barlow-condensed-v4-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/barlow-condensed-v4-latin-regular.svg#BarlowCondensed') format('svg'); /* Legacy iOS */
+}
+/* barlow-condensed-600 - latin */
+@font-face {
+  font-family: 'Barlow Condensed';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/barlow-condensed-v4-latin-600.eot'); /* IE9 Compat Modes */
+  src: local('Barlow Condensed SemiBold'), local('BarlowCondensed-SemiBold'),
+       url('../fonts/barlow-condensed-v4-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/barlow-condensed-v4-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/barlow-condensed-v4-latin-600.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/barlow-condensed-v4-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/barlow-condensed-v4-latin-600.svg#BarlowCondensed') format('svg'); /* Legacy iOS */
+}
+
 /*
     VARIABLES
 */
