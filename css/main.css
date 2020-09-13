@@ -673,7 +673,8 @@ h1, h2, h3, h4, p {
     CONTACT
 */
 #contact {
-  background: var(--clr-accent);
+  background-color: var(--clr-background-light);
+  background-image: var(--img-background);
   height: auto;
   min-height: calc(100vh - 1em);
 }
