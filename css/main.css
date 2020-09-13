@@ -721,7 +721,7 @@ h1, h2, h3, h4, p {
 }
 
 #contact .container .form form label {
-  color: var(--clr-text-light);
+  color: var(--clr-text-dark);
   text-transform: uppercase;
   font-size: .8em;
 }
