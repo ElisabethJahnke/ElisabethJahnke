@@ -427,6 +427,7 @@ h1, h2, h3, h4, p {
           transform: scale(1.12);
   -webkit-transition: all .5s;
   transition: all .5s;
+  filter: grayscale(100%);
 }
 
 #projects .gallery .gallery-item figure figcaption {
