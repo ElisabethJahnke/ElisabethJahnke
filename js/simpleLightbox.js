@@ -288,16 +288,12 @@
                 );
 
             } else {
-                console.log("IMPORTANT");
-                /* #################################################################################################################################################################
-                var $imageCont = parseHtml(
-                    '<div class="slbImageWrap"><img class="slbImage" src="' + url + '" /></div>'
-                );
-                */
+               console.log("IMPORTANT");
+                
                var $imageCont = parseHtml(
                     '<div class="slbImageWrap"><img class="slbImage" srcset="' + url + '.webp, ' + url + '.png" /></div>'
                 );
-
+                console.log("IMPORTANT 2");
                 this.$currentImage = $imageCont.querySelector('.slbImage');
 
                 if (this.options.showCaptions && this.captions[position]) {
@@ -305,7 +301,7 @@
                         '<div class="slbCaption">' + this.captions[position] + '</div>')
                     );
                 }
-
+                console.log("IMPORTANT 3");
                 this.loadImage(url, function() {
                     console.log("this.loadImage(url, function()");
 
