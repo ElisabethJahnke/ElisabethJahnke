@@ -241,13 +241,17 @@
         },
 
         loading: function(on) {
+            console.log("begin loading");
 
             var self = this;
             var options = this.options;
 
             if (on) {
+                
+                console.log("if on");
 
                 this.loadingTimeout = setTimeout(function() {
+                    console.log("loading timeout");
 
                     addClass(self.$el, options.elementLoadingClass);
 
@@ -260,6 +264,8 @@
                 }, options.loadingTimeout);
 
             } else {
+                
+                console.log("if on else");
 
                 removeClass(this.$el, options.elementLoadingClass);
                 clearTimeout(this.loadingTimeout);
@@ -301,6 +307,7 @@
                 }
 
                 this.loadImage(url, function() {
+                    console.log("load image");
 
                     self.setImageDimensions();
 
@@ -317,9 +324,9 @@
         },
 
         loadImage: function(url, callback) {
-
+            console.log("load img before if");
             if (!this.options.videoRegex.test(url)) {
-
+                console.log("load img if");
                 var image = new Image();
                 callback && (image.onload = callback);
                 //image.src = url; #################################################################################################################################################
