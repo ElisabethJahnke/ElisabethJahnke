@@ -282,13 +282,13 @@
             this.loading(true);
 
             if (this.options.videoRegex.test(url)) {
-
+                console.log("WHY R U HERE?!");
                 callback.call(self, parseHtml(
                     '<div class="slbIframeCont"><iframe class="slbIframe" frameborder="0" allowfullscreen src="' + url + '"></iframe></div>')
                 );
 
             } else {
-
+                console.log("IMPORTANT");
                 /* #################################################################################################################################################################
                 var $imageCont = parseHtml(
                     '<div class="slbImageWrap"><img class="slbImage" src="' + url + '" /></div>'
