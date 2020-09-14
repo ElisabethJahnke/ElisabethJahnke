@@ -241,17 +241,16 @@
         },
 
         loading: function(on) {
-            console.log("begin loading");
+            console.log("loading: function(on)");
 
             var self = this;
             var options = this.options;
 
             if (on) {
                 
-                console.log("if on");
+                console.log("loading: function(on) if(on)");
 
                 this.loadingTimeout = setTimeout(function() {
-                    console.log("loading timeout");
 
                     addClass(self.$el, options.elementLoadingClass);
 
@@ -265,7 +264,7 @@
 
             } else {
                 
-                console.log("if on else");
+                console.log("loading: function(on) if(on) else");
 
                 removeClass(this.$el, options.elementLoadingClass);
                 clearTimeout(this.loadingTimeout);
@@ -275,6 +274,7 @@
         },
 
         prepareItem: function(position, callback) {
+            console.log("prepareItem: function(position, callback)");
 
             var self = this;
             var url = this.items[position];
@@ -307,7 +307,7 @@
                 }
 
                 this.loadImage(url, function() {
-                    console.log("load image");
+                    console.log("this.loadImage(url, function()");
 
                     self.setImageDimensions();
 
@@ -324,13 +324,14 @@
         },
 
         loadImage: function(url, callback) {
-            console.log("load img before if");
+            console.log("loadImage: function(url, callback)");
             if (!this.options.videoRegex.test(url)) {
                 console.log("load img if");
                 var image = new Image();
                 callback && (image.onload = callback);
                 //image.src = url; #################################################################################################################################################
                 image.srcset = url + '.webp, ' + url + '.png';
+                console.log(image.srcset);
             }
 
         },
