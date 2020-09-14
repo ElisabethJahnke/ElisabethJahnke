@@ -47,7 +47,7 @@
     }
 
     function parseHtml(html) {
-
+        console.log("WASSUP PARSING HTML");
         var div = document.createElement('div');
         div.innerHTML = html.trim();
 
