@@ -3,10 +3,9 @@
 <head>
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="./css/projectpage.css">
-  <link rel="stylesheet" href="./css/simpleLightbox.css">
+  <link rel="stylesheet" href="./css/simple-lightbox.css">
   <script src="js/cpe.js"></script>
   <script src="js/colcade.js"></script>
-  <script src="js/simpleLightbox.js"></script>
   <script src="js/masonry.js"></script>
   <script src="js/lazyload.js"></script>
   <meta charset="UTF-8">
@@ -94,7 +93,7 @@
     </div>
 </div>
 <!-- data-colcade="columns: .grid-col, items: .grid-item" -->
-<div class="grid">
+<div class="grid gallery">
         <div class="grid-col grid-col--1"></div>
         <div class="grid-col grid-col--2"></div>
         <div class="grid-col grid-col--3"></div>
@@ -102,7 +101,7 @@
   
   
         <div class="grid-item">
-                <a href="./images/Illustration/200904_pumpkin-everything_large@2x" title="pumpkin everything">
+                <a href="./images/Illustration/200904_pumpkin-everything_large@2x.png" title="pumpkin everything">
                         <picture class="lazy" data-src="./images/Illustration/200904_pumpkin-everything">
                         </picture>
                         <div class="caption">
@@ -325,8 +324,12 @@
         
         
 </div>
-<!--<script src="js/masonry.js"></script>
-<script src="js/lazyload.js"></script>-->
+<script src="js/simple-lightbox.js"></script>
+<script>
+        (function() {
+            var $gallery = new SimpleLightbox('.gallery a', {});
+        })();
+</script>
 
 </main>
 <footer>

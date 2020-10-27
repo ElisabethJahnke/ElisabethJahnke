@@ -1,11 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // JS Infobox
-    var jsinfo = document.getElementsByClassName("jsinfo")[0];
-    jsinfo.classList.add("hidden");
-
-    masonryLayout(); // masonry.js
-    //var colcadegrid = document.getElementsByClassName(".grid")[0];
-    
+document.addEventListener("DOMContentLoaded", function() {   
     var lazyloadImages;
   
     if ("IntersectionObserver" in window) {
@@ -17,13 +10,10 @@ document.addEventListener("DOMContentLoaded", function() {
             var picture = entry.target;
             var path = picture.dataset.src;
 
-            createPicture(picture, path); // cpe.js
+            //data-src --> src  #################################################################################################################
             
             picture.classList.remove("lazy");
             imageObserver.unobserve(picture);
-
-            //updateLayout();
-            //masonryLayout();
           }
         });
       });
@@ -46,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
               if(picture.offsetTop < (window.innerHeight + scrollTop)) {
                 var path = picture.dataset.src;
 
-                createPicture(picture, path); // cpe.js
+                //data-src --> src  #################################################################################################################
 
                 picture.classList.remove('lazy');
               }
