@@ -1,7 +1,9 @@
+/* https://www.sylvaindurand.org/overlay-image-in-pure-css/ */
+
 .overlay {
     /* Display over the entire page */
     position: fixed;
-    z-index: 99;
+    z-index: 9000;
     top: 0;
     left: 0;
     width: 100%;

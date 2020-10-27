@@ -1,11 +1,13 @@
-document.addEventListener("DOMContentLoaded", function() {
-    // JS Infobox
-    var jsinfo = document.getElementsByClassName("jsinfo")[0];
-    jsinfo.classList.add("hidden");
+function createGridItemDOM(lazy) {
+  lazy.setAttribute("srcset", lazy.dataset.srcset);
 
-    masonryLayout(); // masonry.js
-    //var colcadegrid = document.getElementsByClassName(".grid")[0];
-    
+  if(lazy.nodeName.toLowerCase() == "img") {
+    lazy.setAttribute("src", lazy.dataset.srcset);
+  }
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    setupGalleryDOM();   
     var lazyloadImages;
   
     if ("IntersectionObserver" in window) {
@@ -14,22 +16,18 @@ document.addEventListener("DOMContentLoaded", function() {
       var imageObserver = new IntersectionObserver(function(entries, observer) {
         entries.forEach(function(entry) {
           if (entry.isIntersecting) {
-            var picture = entry.target;
-            var path = picture.dataset.src;
+            var lazy = entry.target;
 
-            createPicture(picture, path); // cpe.js
+            createGridItemDOM(lazy);
             
-            picture.classList.remove("lazy");
-            imageObserver.unobserve(picture);
-
-            //updateLayout();
-            //masonryLayout();
+            lazy.classList.remove("lazy");
+            imageObserver.unobserve(lazy);
           }
         });
       });
   
-      lazyloadImages.forEach(function(picture) {
-        imageObserver.observe(picture);
+      lazyloadImages.forEach(function(lazy) {
+        imageObserver.observe(lazy);
       });
     } else {  
       var lazyloadThrottleTimeout;
@@ -42,13 +40,12 @@ document.addEventListener("DOMContentLoaded", function() {
   
         lazyloadThrottleTimeout = setTimeout(function() {
           var scrollTop = window.pageYOffset;
-          lazyloadImages.forEach(function(picture) {
-              if(picture.offsetTop < (window.innerHeight + scrollTop)) {
-                var path = picture.dataset.src;
+          lazyloadImages.forEach(function(lazy) {
+              if(lazy.offsetTop < (window.innerHeight + scrollTop)) {
 
-                createPicture(picture, path); // cpe.js
+                createGridItemDOM(lazy);
 
-                picture.classList.remove('lazy');
+                lazy.classList.remove('lazy');
               }
           });
           if(lazyloadImages.length == 0) { 
