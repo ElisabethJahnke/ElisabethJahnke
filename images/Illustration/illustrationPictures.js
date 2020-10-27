@@ -12,7 +12,7 @@ const pictureSet = [
     ["images/Illustration/200721_Illustrationen-27", "moondancer"],
     ["images/Illustration/200721_Illustrationen-01", "Haushuhn"],
     ["images/Illustration/200721_Illustrationen-02", "Plymouth Rock"],
-    ["images/Illustration/200721_Illustrationen-03", "Deidenhuhn"],
+    ["images/Illustration/200721_Illustrationen-03", "Seidenhuhn"],
     ["images/Illustration/200721_Illustrationen-04", "die Dame aus dem Wald"],
     ["images/Illustration/200721_Illustrationen-05", "Frau Bäcker"],
     ["images/Illustration/200721_Illustrationen-06", "May the 4th be with you - baby yoda"],
