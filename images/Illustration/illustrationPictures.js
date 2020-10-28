@@ -1,5 +1,4 @@
-const pictureSet = [
-    
+const dataSet = [
     ["images/Illustration/201026_happy-halloween", "happy halloween 2020"],
     ["images/Illustration/201004_blackcat", "black cat"],
     ["images/Illustration/201013_skull", "skull"],
@@ -32,7 +31,7 @@ const pictureSet = [
     ["images/Illustration/200721_Illustrationen-20", "Spielanleitung Sportunterricht"],
     ["images/Illustration/200721_Illustrationen-21", "Freibadtrends - 02"],
     ["images/Illustration/200721_Illustrationen-22", "Freibadtrends - 01"],
-    ["images/Illustration/200721_Illustrationen-23", "Metalheads"],
-
-
+    ["images/Illustration/200721_Illustrationen-23", "Metalheads"]
 ];
+
+const galleryType = "images";
