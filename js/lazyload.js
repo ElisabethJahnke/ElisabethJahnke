@@ -1,7 +1,10 @@
 function createGridItemDOM(lazy) {
   if(lazy.nodeName.toLowerCase() == "video") {
-    lazy.setAttribute("poster", lazy.dataset.poster);
+    //lazy.setAttribute("poster", lazy.dataset.poster);
+    lazy.classList.add("loaded");
     
+    videoPlayers = document.querySelectorAll(".loaded");
+
     for (var source in lazy.children) {
       var videoSource = lazy.children[source];
       if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {

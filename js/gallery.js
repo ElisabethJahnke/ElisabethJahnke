@@ -65,7 +65,8 @@ function createGalleryVideoItem(gallery, data) {
     video.muted = true;
     video.loop = true;
     video.setAttribute("playsinline", "");
-    video.setAttribute("data-poster", data[2]);
+    //video.setAttribute("data-poster", data[2]);
+    video.setAttribute("poster", data[2]);
     video.appendChild(srcWEBM);
     video.appendChild(srcMP4); 
     
