@@ -1,4 +1,4 @@
-const pictureSet = [
+const dataSet = [
     ["images/Illustration/200721_Illustrationen-01", "Title"],
     ["images/Illustration/200721_Illustrationen-02", "Title"],
     ["images/Illustration/200721_Illustrationen-03", "Title"],
@@ -27,3 +27,5 @@ const pictureSet = [
     ["images/Illustration/200721_Illustrationen-27", "Title"],
     ["images/Illustration/200904_pumpkin-everything", "Title"]
 ];
+
+const galleryType = "images";

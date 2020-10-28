@@ -1,5 +1,18 @@
 function createGridItemDOM(lazy) {
-  lazy.setAttribute("srcset", lazy.dataset.srcset);
+  if(lazy.nodeName.toLowerCase() == "video") {
+    lazy.setAttribute("poster", lazy.dataset.poster);
+    
+    for (var source in lazy.children) {
+      var videoSource = lazy.children[source];
+      if (typeof videoSource.tagName === "string" && videoSource.tagName === "SOURCE") {
+        videoSource.src = videoSource.dataset.src;
+      }
+    }
+
+    lazy.load();
+  } else {
+    lazy.setAttribute("srcset", lazy.dataset.srcset);
+  }
 
   if(lazy.nodeName.toLowerCase() == "img") {
     lazy.setAttribute("src", lazy.dataset.srcset);
