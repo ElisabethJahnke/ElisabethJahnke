@@ -11,7 +11,6 @@ const dataSet = [
     ["video/200728_Waldgeister-Drache", "-", "video/poster.jpg"],
     ["video/200728_Waldgeister-Graeser", "-", "video/poster.jpg"],
     ["video/200728_Waldgeister-lava", "-", "video/poster.jpg"],
-    ["video/200728_Waldgeister-Pilze", "-", "video/poster.jpg"],
     ["video/200728_Waldgeister-Pusteblume", "-", "video/poster.jpg"],
     ["video/200728_Waldgeister-Tannenzapfen", "-", "video/poster.jpg"],
     ["video/200728_Waldgeister-Pancake-Pilz", "-", "video/poster.jpg"],
