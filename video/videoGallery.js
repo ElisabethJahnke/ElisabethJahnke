@@ -16,7 +16,6 @@ const dataSet = [
     ["video/200728_Waldgeister-Tannenzapfen", "-", "video/poster.jpg"]
     ["video/200728_Waldgeister-Pancake-Pilz", "-", "video/poster.jpg"]
     ["video/200728_Waldgeister-Baumpilz", "-", "video/poster.jpg"]
-
     ["video/IMG_0241", "Title", "video/poster.jpg"]
 ];
 
