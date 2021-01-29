@@ -300,8 +300,44 @@ h1, h2, h3, h4, p {
   left: 50%;
   transform: translateX(-50%);
   animation: reveal 3s;
+  -webkit-animation: reveal 3s;
+  -moz-animation: reveal 3s;
+  -o-animation: reveal 3s;
 }
 @keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes reveal {
+  0% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes reveal {
   0% {
     opacity: 0;
   }
