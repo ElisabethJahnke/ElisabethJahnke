@@ -697,13 +697,6 @@ h1, h2, h3, h4, p {
   display: grid;
 }
 
-#contact .container #form-logo #spacer h1 {
-  text-transform: uppercase;
-  align-self: center;
-  margin-left: 13%;
-  font-size: 2em;
-}
-
 #contact .container #form-logo picture {
   max-width: 35%;
   width: 35%;
@@ -753,6 +746,7 @@ h1, h2, h3, h4, p {
 #contact .container #contact-container .square .contact-obj h1 {
   color: var(--clr-accent);
   text-transform: uppercase;
+  font-family: var(--ff-roboto);
 }
 
 #contact .container #contact-container .square .contact-obj p {
@@ -761,12 +755,6 @@ h1, h2, h3, h4, p {
   display: grid;
   padding-left: 10px;
   padding-right: 10px;
-}
-
-#contact .container #contact-container .square .contact-obj a {
-  text-decoration: none;
-  color: var(--clr-contact-box);
-  cursor: pointer;
   text-align: center;
 }
 
