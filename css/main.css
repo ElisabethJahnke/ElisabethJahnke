@@ -734,6 +734,7 @@ h1, h2, h3, h4, p {
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
+  transition: all .5s;
 }
 #contact .container #contact-container .square .contact-obj:hover {
   box-shadow: 10px 10px 0px var(--clr-accent);
