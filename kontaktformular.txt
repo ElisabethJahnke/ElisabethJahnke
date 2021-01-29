@@ -1,0 +1,44 @@
+<div class="form">
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+    <!-- https://docs.google.com/forms/d/e/1FAIpQLSffmWaSq5Up5YkTZggiANEnEqcNLZUwptegVGmU_HYG7ZPBiQ/viewform?usp=pp_url&entry.1864236594=Name&entry.529565398=Email&entry.189756231=Phone&entry.592910776=Message&entry.617573837=BOT -->
+    <!--<form id="gform" target="hidden_iframe">-->
+    <form id="gform" onsubmit="contactFormSubmit();">
+        <label for="entry.1864236594">Name*:</label>
+        <input type="text" name="entry.1864236594" id="entry.1864236594" required>
+        <br>
+        <label for="entry.529565398">E-Mail*:</label>
+        <input type="email" name="entry.529565398" id="entry.529565398" required>
+        <br>
+        <label for="entry.189756231">Phone:</label>
+        <input type="tel" name="entry.189756231" id="entry.189756231" >
+        <br>
+        <label for="entry.592910776">Nachricht*:</label>
+        <textarea name="entry.592910776" id="entry.592910776" placeholder="Moin," required></textarea>
+        <br>
+        <input type="text" name="entry.617573837" id="entry.617573837" style="display: none;">
+        <!--<button id="btn" onclick="contactFormSubmit()">Send &#x27A4</button>-->
+        <input type="submit" id="btn" value="Send &#x27A4">
+    </form>
+</div>
+
+<!-- https://formspree.io -->
+<!-- http://kontactr.com -->
+<!-- https://github.com/toperkin/staticFormEmails/blob/master/README.md -->
+<!-- https://usebasin.com -->
+<!-- https://www.heroku.com/home host php script, use with sendgrid-->
+
+<!--
+<section id="embedtest">
+        https://xfanatical.com/blog/captcha-for-forms/ 
+        for this approach recaptcha could be used 
+        https://xfanatical.com/blog/3-ways-to-protect-google-forms-from-spamming/ 
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScptFow4gasmU6mxq0Z225-zbkFK4ZXGHnt2PtvkHC_Zk-6NA/viewform?embedded=true" width="640" height="1100" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+</section>
+-->
+<!-- https://coderwall.com/p/8lq1ba/how-to-create-a-contact-form-for-a-github-pages-served-jekyll-website -->
+<!-- https://elfsight.com/contact-form-widget/pricing/ -->
+<!-- https://blog.webjeda.com/jekyll-contact-form/ -->
+<!-- https://just-code.team -->
+<!-- http://reusableforms.com/d/o5/html5-contact-form-send-email -->
+<!-- https://stackoverflow.com/questions/24026898/how-to-send-an-email-using-only-html5-and-css/24026951 -->
+<!-- https://code.tutsplus.com/tutorials/build-a-neat-html5-powered-contact-form--net-20426 -->
