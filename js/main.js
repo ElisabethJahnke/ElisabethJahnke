@@ -33,3 +33,11 @@ function filterProjectsSelect() {
     
     filterProjects(value);
 }
+
+window.addEventListener('scroll', disableScrollIndicators);
+
+function disableScrollIndicators() {
+    var scrollIndicators = document.querySelectorAll('.scroll-indicator');
+    scrollIndicators.forEach(indicator => indicator.classList.add('hidden'));
+    window.removeEventListener('scroll', disableScrollIndicators);
+}
