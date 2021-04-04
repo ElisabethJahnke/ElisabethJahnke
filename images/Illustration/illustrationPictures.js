@@ -1,4 +1,12 @@
 const dataSet = [
+    ["images/Illustration/210404_Easter-greetings_v2", "easter wallpaper 2"],
+    ["images/Illustration/210404_Easter-greetings", "easter wallpaper 1"],
+    ["images/Illustration/210404_3Wasseraffen", "3 Wasseraffen"],
+    ["images/Illustration/210404_Elster-im-Ilex", "Elster im Ilex"],
+    ["images/Illustration/210404_Merry-Christmas", "merry christmas 2020"],
+    ["images/Illustration/210404_Holydayhouse-Store", "HolidayHouseWeek - storefront"],
+    ["images/Illustration/210404_Holydayhouse-townhouse", "HolidayHouseWeek - Townhouse"],
+    ["images/Illustration/210404_red-robin", "red robin"],
     ["images/Illustration/201026_happy-halloween", "happy halloween 2020"],
     ["images/Illustration/201004_blackcat", "black cat"],
     ["images/Illustration/201013_skull", "skull"],
